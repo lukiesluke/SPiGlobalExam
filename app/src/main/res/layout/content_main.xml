@@ -64,14 +64,6 @@
             android:text="100"
             android:textColor="@color/abc_search_url_text_pressed" />
 
-        <Button
-            android:id="@+id/btnShowAnw4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/txtq4"
-            android:layout_toRightOf="@+id/editTextQ4"
-            android:text="Show prime numbers" />
-
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
@@ -110,16 +102,6 @@
             android:textColor="@color/abc_search_url_text_pressed" />
 
         <Button
-            android:id="@+id/btnShowAnw5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/editTextQ5"
-            android:layout_alignTop="@+id/editTextQ5"
-            android:layout_toEndOf="@+id/editTextQ5"
-            android:layout_toRightOf="@+id/editTextQ5"
-            android:text="Armstrong Number" />
-
-        <Button
             android:id="@+id/btnShowAnw1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -137,17 +119,6 @@
             android:layout_below="@+id/txtq2"
             android:text="100"
             android:textColor="@color/abc_search_url_text_pressed" />
-
-        <Button
-            android:id="@+id/btnShowAnw2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/txtq2"
-            android:layout_marginLeft="15dp"
-            android:layout_marginStart="15dp"
-            android:layout_toEndOf="@+id/editTextQ2"
-            android:layout_toRightOf="@+id/editTextQ2"
-            android:text="Show Factorial number" />
 
         <TextView
             android:id="@+id/textView"
@@ -176,17 +147,6 @@
             android:layout_below="@+id/editTextQ1"
             android:text="@string/q1" />
 
-        <EditText
-            android:id="@+id/editTextQ6"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/textView2"
-            android:layout_marginTop="15dp"
-            android:text="100"
-            android:textColor="@color/abc_search_url_text_pressed" />
-
         <Button
             android:id="@+id/btnShowAnw6"
             android:layout_width="wrap_content"
@@ -195,5 +155,42 @@
             android:layout_toEndOf="@+id/editTextQ6"
             android:layout_toRightOf="@+id/editTextQ6"
             android:text="Show format" />
+
+        <Button
+            android:id="@+id/btnShowAnw5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Armstrong Number"
+            android:layout_below="@+id/txtq5"
+            android:layout_toRightOf="@+id/editTextQ5"
+            android:layout_toEndOf="@+id/editTextQ5" />
+
+        <Button
+            android:id="@+id/btnShowAnw2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Factorial number"
+            android:layout_below="@+id/txtq2"
+            android:layout_toRightOf="@+id/editTextQ2"
+            android:layout_toEndOf="@+id/editTextQ2" />
+
+        <Button
+            android:id="@+id/btnShowAnw4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show prime numbers"
+            android:layout_below="@+id/txtq4"
+            android:layout_toRightOf="@+id/editTextQ4"
+            android:layout_toEndOf="@+id/editTextQ4" />
+
+        <EditText
+            android:id="@+id/editTextQ6"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:textColor="@color/abc_search_url_text_pressed"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
     </RelativeLayout>
 </ScrollView>
