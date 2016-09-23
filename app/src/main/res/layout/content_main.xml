@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.spiquestionandanswer.spiqa.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:showIn="@layout/activity_main">
+
+        <TextView
+            android:id="@+id/txtq1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editTextQ1"
+            android:text="@string/q1" />
+
+        <EditText
+            android:id="@+id/editTextQ1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/arr"
+            android:textColor="@color/abc_search_url_text_pressed" />
+
+        <Button
+            android:id="@+id/btnQ1Set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editTextQ1"
+            android:layout_toEndOf="@+id/editTextQ1"
+            android:layout_toRightOf="@+id/editTextQ1"
+            android:text="Change array values" />
+
+        <Button
+            android:id="@+id/btnShowAnw1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtq1"
+            android:layout_toEndOf="@+id/btnShowAnw1a"
+            android:layout_toRightOf="@+id/btnShowAnw1a"
+            android:text="duplicate count" />
+
+        <TextView
+            android:id="@+id/txtq2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/btnShowAnw1"
+            android:text="@string/q2" />
+
+        <EditText
+            android:id="@+id/editTextQ2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtq2"
+            android:text="100"
+            android:textColor="@color/abc_search_url_text_pressed" />
+
+        <Button
+            android:id="@+id/btnShowAnw2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editTextQ2"
+            android:layout_alignLeft="@+id/btnShowAnw4"
+            android:layout_alignStart="@+id/btnShowAnw4"
+            android:text="Show Factorial number" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/btnShowAnw2"
+            android:text="@string/q3" />
+
+        <Button
+            android:id="@+id/btnShowAnw3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView"
+            android:text="Show descending order" />
+
+        <TextView
+            android:id="@+id/txtq4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/btnShowAnw3"
+            android:text="@string/q4" />
+
+        <EditText
+            android:id="@+id/editTextQ4"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtq4"
+            android:text="100"
+            android:textColor="@color/abc_search_url_text_pressed" />
+
+        <Button
+            android:id="@+id/btnShowAnw4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtq4"
+            android:layout_toEndOf="@+id/editTextQ4"
+            android:layout_toRightOf="@+id/editTextQ4"
+            android:text="Show prime numbers" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/btnShowAnw5"
+            android:text="@string/q6" />
+
+        <EditText
+            android:id="@+id/editTextQ6"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView2"
+            android:text="100"
+            android:textColor="@color/abc_search_url_text_pressed" />
+
+        <Button
+            android:id="@+id/btnShowAnw6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnShowAnw5"
+            android:layout_alignStart="@+id/btnShowAnw5"
+            android:layout_below="@+id/textView2"
+            android:text="Show format" />
+
+        <Button
+            android:id="@+id/btnShowAnw1a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtq1"
+            android:text="duplicated No." />
+
+        <TextView
+            android:id="@+id/txtq5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editTextQ4"
+            android:text="@string/q5" />
+
+        <EditText
+            android:id="@+id/editTextQ5"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtq5"
+            android:text="100"
+            android:textColor="@color/abc_search_url_text_pressed" />
+
+        <Button
+            android:id="@+id/btnShowAnw5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/editTextQ5"
+            android:layout_toEndOf="@+id/editTextQ5"
+            android:layout_toRightOf="@+id/editTextQ5"
+            android:text="Armstrong Number" />
+    </RelativeLayout>
+</ScrollView>
