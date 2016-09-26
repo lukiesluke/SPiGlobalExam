@@ -17,34 +17,6 @@
         android:paddingTop="@dimen/activity_vertical_margin"
         tools:showIn="@layout/activity_main">
 
-        <EditText
-            android:id="@+id/editTextQ1"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:text="@string/arr"
-            android:textColor="@color/abc_search_url_text_pressed" />
-
-        <TextView
-            android:id="@+id/txtq2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/btnShowAnw1"
-            android:text="@string/q2" />
-
-        <Button
-            android:id="@+id/btnShowAnw3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/textView"
-            android:text="Show descending order" />
-
         <TextView
             android:id="@+id/txtq4"
             android:layout_width="wrap_content"
@@ -61,7 +33,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_below="@+id/txtq4"
-            android:text="100"
+            android:text="1000"
             android:textColor="@color/abc_search_url_text_pressed" />
 
         <TextView
@@ -101,25 +73,6 @@
             android:text="100"
             android:textColor="@color/abc_search_url_text_pressed" />
 
-        <Button
-            android:id="@+id/btnShowAnw1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/txtq1"
-            android:layout_toEndOf="@+id/btnShowAnw1a"
-            android:layout_toRightOf="@+id/btnShowAnw1a"
-            android:text="duplicate count" />
-
-        <EditText
-            android:id="@+id/editTextQ2"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/txtq2"
-            android:text="100"
-            android:textColor="@color/abc_search_url_text_pressed" />
-
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
@@ -128,16 +81,6 @@
             android:layout_alignParentStart="true"
             android:layout_below="@+id/editTextQ2"
             android:text="@string/q3" />
-
-        <Button
-            android:id="@+id/btnQ1Set"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_toEndOf="@+id/editTextQ1"
-            android:layout_toRightOf="@+id/editTextQ1"
-            android:layout_above="@+id/txtq1"
-            android:text="Change array values" />
 
         <TextView
             android:id="@+id/txtq1"
@@ -149,24 +92,82 @@
             android:text="@string/q1" />
 
         <Button
-            android:id="@+id/btnShowAnw6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/editTextQ6"
-            android:layout_toEndOf="@+id/editTextQ6"
-            android:layout_toRightOf="@+id/editTextQ6"
-            android:layout_alignBottom="@+id/editTextQ6"
-            android:text="Show format" />
-
-        <Button
             android:id="@+id/btnShowAnw5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Armstrong Number"
-            android:layout_below="@+id/txtq5"
-            android:layout_toRightOf="@+id/editTextQ5"
             android:layout_alignBottom="@+id/editTextQ5"
-            android:layout_toEndOf="@+id/editTextQ5" />
+            android:layout_below="@+id/txtq5"
+            android:layout_toEndOf="@+id/editTextQ5"
+            android:layout_toRightOf="@+id/editTextQ5"
+            android:text="Armstrong Number" />
+
+        <Button
+            android:id="@+id/btnShowAnw4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtq4"
+            android:layout_toEndOf="@+id/editTextQ4"
+            android:layout_toRightOf="@+id/editTextQ4"
+            android:text="Show prime numbers" />
+
+        <EditText
+            android:id="@+id/editTextQ6"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView2"
+            android:text="100"
+            android:textColor="@color/abc_search_url_text_pressed" />
+
+        <Button
+            android:id="@+id/btnShowAnw6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show format"
+            android:layout_below="@+id/textView2"
+            android:layout_toRightOf="@+id/editTextQ6"
+            android:layout_toEndOf="@+id/editTextQ6" />
+
+        <EditText
+            android:id="@+id/editTextQ1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/arr"
+            android:textColor="@color/abc_search_url_text_pressed"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/btnQ1Set"
+            android:layout_toStartOf="@+id/btnQ1Set" />
+
+        <Button
+            android:id="@+id/btnShowAnw1b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="duplicate count"
+            android:layout_below="@+id/txtq1"
+            android:layout_toRightOf="@+id/btnShowAnw1a"
+            android:layout_toEndOf="@+id/btnShowAnw1a" />
+
+        <TextView
+            android:id="@+id/txtq2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/q2"
+            android:layout_below="@+id/btnShowAnw1a"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/editTextQ2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:textColor="@color/abc_search_url_text_pressed"
+            android:layout_below="@+id/txtq2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
         <Button
             android:id="@+id/btnShowAnw2"
@@ -175,27 +176,24 @@
             android:text="Show Factorial number"
             android:layout_below="@+id/txtq2"
             android:layout_toRightOf="@+id/editTextQ2"
-            android:layout_above="@+id/textView"
             android:layout_toEndOf="@+id/editTextQ2" />
 
         <Button
-            android:id="@+id/btnShowAnw4"
+            android:id="@+id/btnShowAnw3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Show prime numbers"
-            android:layout_below="@+id/txtq4"
-            android:layout_toRightOf="@+id/editTextQ4"
-            android:layout_above="@+id/txtq5"
-            android:layout_toEndOf="@+id/editTextQ4" />
-
-        <EditText
-            android:id="@+id/editTextQ6"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:text="100"
-            android:textColor="@color/abc_search_url_text_pressed"
-            android:layout_below="@+id/textView2"
+            android:text="Show descending order"
+            android:layout_below="@+id/textView"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/btnQ1Set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change array values"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/txtq4"
+            android:layout_alignEnd="@+id/txtq4" />
     </RelativeLayout>
 </ScrollView>
