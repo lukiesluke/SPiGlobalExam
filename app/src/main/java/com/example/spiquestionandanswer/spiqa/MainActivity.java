@@ -127,7 +127,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             i.putExtra("QUESTION", "Q3");
             i.putExtra("VALUE", sQ1);
             startActivity(i);
-
             //Toast.makeText(this, "Array value {" + sQ1.trim() + "} in descending orders" + ClassFunction.arrayListDesOrderList(sQ1), Toast.LENGTH_LONG).show();
         }
 
