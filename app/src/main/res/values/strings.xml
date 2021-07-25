@@ -9,5 +9,6 @@
     <string name="arr">2,4,2,8,3,8,2</string>
     <string name="q5">5. Write a function that will find whether a given (three digit number) is an Armstrong Number</string>
     <string name="q6">6. Write a function that prints in the below format:</string>
+    <string name="appbar_scrolling_view_behavior">appbar_scrolling_view_behavior</string>
 
 </resources>

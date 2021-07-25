@@ -1,12 +1,10 @@
 package com.example.spiquestionandanswer.spiqa;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 public class AnsweredActivity extends AppCompatActivity {
     private String question, value;
@@ -25,16 +23,6 @@ public class AnsweredActivity extends AppCompatActivity {
             question = extras.getString("QUESTION");
             value = extras.getString("VALUE").trim();
         }
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Back to Hone", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-                finish();
-            }
-        });
     }
 
     @Override

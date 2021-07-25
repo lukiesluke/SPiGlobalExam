@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SPiGlobalExam.iml" filepath="$PROJECT_DIR$/SPiGlobalExam.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SPiGlobalExam.iml" filepath="$PROJECT_DIR$/.idea/modules/SPiGlobalExam.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SPiGlobalExam.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SPiGlobalExam.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mylibrary/SPiGlobalExam.mylibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/mylibrary/SPiGlobalExam.mylibrary.iml" />
     </modules>
   </component>
 </project>
