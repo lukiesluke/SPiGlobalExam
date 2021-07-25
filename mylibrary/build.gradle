@@ -1,8 +1,14 @@
 plugins {
     id 'com.android.library'
+    id 'maven-publish'
 }
 
+// MavenLocal Setup
+def artifactId = 'mylibrary'
+def groupId = 'com.example.spiquestionandanswer.spiqa'
+
 android {
+
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
 
@@ -22,16 +28,31 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
 }
 
+// MavenLocal Setup
+project.afterEvaluate {
+    publishing {
+        publications {
+            library(MavenPublication) {
+                setGroupId groupId
+                setArtifactId artifactId
+                version android.defaultConfig.versionName
+                artifact bundleReleaseAar
+            }
+        }
+    }
+}
+
 dependencies {
 
     implementation 'androidx.coordinatorlayout:coordinatorlayout:1.1.0'
-    testImplementation 'junit:junit:4.+'
+    testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
